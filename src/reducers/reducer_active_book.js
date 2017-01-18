@@ -1,6 +1,9 @@
-export const ActiveBook = (state, action) => {
-  if (action.type === 'BOOK_SELECTED') {
-    return action.payload
+export default (state = null, action) => {
+  switch(action.type) {
+    case 'BOOK_SELECTED':
+      return action.payload
+    default:
+      return state
   }
-  return state
 }
+
