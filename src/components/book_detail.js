@@ -10,6 +10,7 @@ class BookDetail extends React.Component {
       <div>
         <h3>Details for:</h3>
         <div>{this.props.book.title}</div>
+        <div><em>Pages: {this.props.book.pages}</em></div>
       </div>
     )
   }
